@@ -1,0 +1,40 @@
+Instalaciones:
+ - XAMPP
+ - Postman
+
+1. Crear base de datos ()
+2. Abrir el restP
+3. Ir a aplication/controllers (Copiar el encabezado de Welcome.php)
+3. Crear archivo (prueba.php)
+4. Probar con Postman el archivo prueba.php (http://localhost/restP/index.php/prueba)
+5. crear servicios y probar http://localhost/restP/index.php/prueba/obtener_arreglo/1
+6. Cargar datos a la Base de Datos
+7. Incluir crendenciales de la Base de Datos: aplication/config/database.php
+	root - pruebaBD
+8. Incluir el REST-Server  a la carpeta restP (Localhost)
+     - archivo rest.php mover a restP/aplication/config
+     - archivos Format.php (respuestas en XML/JSON) y REST_Controller.php (controladores normales en servicios rEST) mover a restP/aplication/libraries
+     -carpeta english reemplazar restP/aplication/language
+
+9. En el prueba.php poner:
+   require_once (APPPATH.'/libraries/REST_Controler.php');
+  use Restserver\Libraries\REST_Controler;
+
+  class Prueba extends REST_Controller
+
+  public function obtener_arreglo_get($id): Poner el get para ver el tipo de servicio
+
+FRONT - END __________________________________________________
+_______________________________________________________________
+
+1. npm install -g @angular/cli
+2. ng new crudFront
+3.1. ng add @angular/material
+3. ng g c crud
+4. ng generate service producto
+5. En el App.module.ts e inyectar el HttpClientModule en los imports
+6. En el App.module.ts e inyectar el Servicio en los Providers
+7.
+
+
+ 
